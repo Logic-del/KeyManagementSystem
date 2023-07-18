@@ -113,16 +113,16 @@ function generateRandomValue(existingValues) {
 
 
 function writeKey(data) {
-  fs.writeFileSync("LogiTechKey.json", JSON.stringify(data));
-  console.log("Logitech data saved to LogiTechKey.json");
+  fs.writeFileSync("LogitechKey.json", JSON.stringify(data));
+  console.log("Logitech data saved to LogitechKey.json");
 };
 
 function loadFromJSON() {
   try {
-    const data = fs.readFileSync("LogiTechKey.json", "utf8");
+    const data = fs.readFileSync("LogitechKey.json", "utf8");
     return JSON.parse(data);
   } catch (err) {
-    console.error("Error loading Logitech data from LogiTechKey.json:", err);
+    console.error("Error loading Logitech data from LogitechKey.json:", err);
     return null;
   }
 };
